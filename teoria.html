@@ -4,33 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale=1,0> 
     <title>Pagina Principal</title>
-</head> 
-<style> 
-    /* Seletor universal */
-    * { 
-        margin: 0;
-    }
-    /* Seletor de tipo, aplicando em uma tag */
-    p{ 
-        color: rgb(0, 170, 255) 
-    } 
-
-    /* Seletor de classe */ 
-    .paragrafo{ 
-        background-color:brown; 
-        /* margin: 10px; - Aplica em todas as margens*/ 
-        /* margin: 10px 40px; - Aplica nas margens 'Laterais' e 'superior e inferior' 
-        /* margin: 10px 20px 30px 40px; Aplica margen top, right, bottom, left*/ 
-        margin-left: 10px; 
-    } 
-
-    .imagem { 
-        width: 150px;
-        height: 100px; 
-    } 
-
-
-   </style> 
+    <link rel="stylesheet" href="../css/styles.css">
 </head> 
 <!-- aplicando css inline cor de fundo --> 
 <body style="background-color: rgb(149, 7, 250);"> 
@@ -156,10 +130,73 @@
     <dt>Javascript</dt>
     <dd>Linguagem de programação</dd> 
     
-
-
-
-
      </ol>
     </body>
 </html> 
+
+<!--Trabalhando com tabelas--> 
+<br> 
+<hr> 
+<!--Cria uma nova tabela--> 
+<table> 
+    <!--tr cria uma nova linha-->
+    <tr> 
+        <!--th insere uma celula de cabeçalho--> 
+        <th>nome</th>
+        <th>idade</th>
+        <th>profissão</th> 
+</tr> 
+<tr> 
+    <!--td cria uma nova celula de dados--> 
+    <td>Douglas</td> 
+    <td>32</td> 
+    <td>Professor</td> 
+  </tr> 
+</table>
+     <!-- tag semantica de cabeçalho -->
+      <table>
+    <thead>
+        <tr class=""> 
+            <th class ="cabecalho cabecalho2">Nome</th>
+            <th class ="cabecalho cabecalho2">Telefone</th>
+            <th class ="cabecalho cabecalho2">Cidade</th>
+        </tr>
+    </thead> 
+    <tbody> 
+        <tr>
+            <td class ="celula">Jose da Silva</td>
+            <td class ="celula">2345678</td>
+            <td class ="celula">Andradina</td> 
+        </tr> 
+        <tr> 
+            <td>Maria da Silva</td>
+            <td>2345678</td>
+            <td>Andradina</td> 
+        </tr>
+</tbody> 
+</table> 
+<br> 
+<br>
+<!--Aplicando colspan e rowspan-->
+ <table border ="1"> 
+    <tr> 
+        <th>Nome</th>
+        <th colspan=""2> Telefone</th>
+    </tr>
+    <tr> 
+        <td>Ricardo</td>
+        <td>89877667</td>
+        <td>65830270</td>
+    </tr>
+    <tr> 
+        <td rowspan = "2"> Joaquim</td>
+        <td>09887654</td>
+        <td>12345678</td>
+    </tr>
+    <tr> 
+        <td>09876543</td>
+        <td>67738433</td>
+    </tr>
+    </table>
+</body> 
+</html>

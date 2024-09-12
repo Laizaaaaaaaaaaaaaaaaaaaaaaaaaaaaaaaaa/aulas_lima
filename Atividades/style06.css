@@ -1,0 +1,27 @@
+
+    /* Seletor universal */
+    * { 
+        margin: 0;
+    }
+    /* Seletor de tipo, aplicando em uma tag */
+    p{ 
+        color: rgb(0, 170, 255) 
+    } 
+
+    /* Seletor de classe */ 
+    .paragrafo{ 
+        background-color:brown; 
+        /* margin: 10px; - Aplica em todas as margens*/ 
+        /* margin: 10px 40px; - Aplica nas margens 'Laterais' e 'superior e inferior' 
+        /* margin: 10px 20px 30px 40px; Aplica margen top, right, bottom, left*/ 
+        margin-left: 10px; 
+    } 
+
+    .imagem { 
+        width: 150px;
+        height: 100px; 
+    } 
+body{ 
+    
+}
+   
